@@ -1,0 +1,26 @@
+---
+import LandingHeader from "../components/LandingHeader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ModelY from "../components/ModelY.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Landing Tesla">
+  <LandingHeader />
+  <main
+    class="snap-y snap-mandatory relative h-screen w-full overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ModelY />
+    </div>
+  </main>
+</Layout>
